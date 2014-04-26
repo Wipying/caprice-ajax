@@ -1,0 +1,6 @@
+.sidebox
+  .search
+    %h3 Search
+    %form.searchform{:method => "get"}
+      %input#s{:name => "s", :onblur => "this.value='type and hit enter'", :onfocus => "this.value=''", :type => "text", :value => "type and hit enter"}/
+    .clear

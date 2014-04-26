@@ -1,0 +1,37 @@
+= render 'head'
+/ Begin Post
+.post
+  %img{:alt => "", :src => "/style/images/art/slide1.jpg"}/
+  / Begin Info
+  .info
+    / Begin Date
+    .date
+      .day 24
+      .month Sep
+    / End Date
+    / Begin Meta
+    .meta
+      %h3.title Malesuada Condimentum Inceptos Vehicula
+      .comments
+        %a{:href => "#"} 11 Comments
+      .tags
+        %a{:href => "#"} photography,
+        %a{:href => "#"} manipulation,
+        %a{:href => "#"} journal
+    / End Meta
+  .clear
+  / End Info
+  %p Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+/ End Post
+/ Begin Facebook Comments
+#fb-root
+:javascript
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));        .fb-comments{"data-href" => "http://themes.iki-bir.com/caprice/post.html", "data-num-posts" => "10", "data-width" => "700"}
+/ Enter your page URL here
+/ End Facebook Comments

@@ -1,0 +1,76 @@
+/ Begin Sidebar
+#sidebar
+	#logo
+		%a{href: "index.html"}
+			%img{alt: "Caprice", src: "/style/images/logo.png"}/
+	/ Begin Menu
+	#menu.menu-v
+		%ul
+			%li
+				= link_to 'Home', homes_index_path, :class=>'active'
+				%ul
+					%li
+						= link_to 'Home w/ Carousel', homes_index_path
+					%li
+						= link_to 'Home w/ Portfolio', homes_index2_path
+					%li
+						= link_to 'Home w/ Testimonials', homes_index3_path
+			%li
+				= link_to 'Portfolio', portfolios_index_path
+				%ul
+					%li
+						= link_to 'Portfolio 4 Columns', portfolios_index_path
+					%li
+						= link_to 'Portfolio 3 Columns', portfolios_portfolio2_path
+					%li
+						= link_to 'Portfolio 2 Columns', portfolios_portfolio3_path
+					%li
+						= link_to 'Portfolio 1 Columns', portfolios_portfolio4_path
+					%li
+						= link_to 'Portfolio Post', portfolios_post_path
+			%li
+				= link_to 'Blog', blogs_blog_path
+				%ul
+					%li
+						= link_to 'Blog', blogs_blog_path
+					%li
+						= link_to 'Blog w/ Sidebar', blogs_blog2_path
+					%li
+						= link_to 'Post', blogs_post_path
+					%li
+						= link_to 'Post w/ Sidebar', blogs_post2_path
+			%li
+				= link_to 'Features', features_button_path
+				%ul
+					%li
+						= link_to 'Buttons Boxes Images', features_button_path
+					%li
+						= link_to 'Tabs Toggle Tables', features_tab_path
+					%li
+						= link_to 'Testimonials', features_testmonial_path 
+					%li
+						= link_to 'Typography', features_typography_path
+					%li
+						= link_to 'Service icons', features_icon_path
+			%li
+				=link_to 'Contact Us', contacts_index_path
+	/ End Menu
+	.sidebox
+		%ul.share
+			%li
+				%a{href: "#"}
+					%img{alt: "RSS", src: "/style/images/icon-rss.png"}/
+			%li
+				%a{href: "#"}
+					%img{alt: "Facebook", src: "/style/images/icon-facebook.png"}/
+			%li
+				%a{href: "#"}
+					%img{alt: "Twitter", src: "/style/images/icon-twitter.png"}/
+			%li
+				%a{href: "#"}
+					%img{alt: "Dribbble", src: "/style/images/icon-dribbble.png"}/
+			%li
+				%a{href: "#"}
+					%img{alt: "LinkedIn", src: "/style/images/icon-linkedin.png"}/
+	= yield :searchbox
+/ End Sidebar
