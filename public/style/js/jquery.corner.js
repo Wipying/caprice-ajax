@@ -250,11 +250,3 @@ $.fn.corner.defaults = {
 
 
 
-/*-----------------------------------------------------------------------------------*/
-/*	CORNER
-/*-----------------------------------------------------------------------------------*/
-
-$(function(){
-	$('.carousel ul li img, #prev, #next, .jquery-slider-slide img, .col4 img, .items img, ul.popular-posts li img, .sidebox ul.popular-posts li img, .post img, a.button, .forms fieldset .btn-submit, #filtering-nav li a, .page-navi ul li a, .map iframe, .text-input, .text-area, .form-container .response, .overlay, ul#button_quotes button, ul.tabs li a, .tab_container, h2.trigger, .togglebox, pre, .download-box, .warning-box, .info-box, .note-box, .round, .jta-tweet-list-controls-button, .b-slider img, .e-showcase-navigation ul li, ul.works li img').corner("3px");
-	$('.date').corner("75px");
-});

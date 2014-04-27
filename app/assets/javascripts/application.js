@@ -14,4 +14,18 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require bootstrap-ajax 
+//= require spin.min
+//= require history_jquery
 //= require_tree .
+jQuery.browser={};(function(){jQuery.browser.msie=false;
+jQuery.browser.version=0;if(navigator.userAgent.match(/MSIE ([0-9]+)\./)){
+jQuery.browser.msie=true;jQuery.browser.version=RegExp.$1;}})();
+
+jQuery(document).ajaxStart(function(){
+	jQuery('.ajax-progress').show();
+});
+
+jQuery(document).ajaxStop(function(){
+	jQuery('.ajax-progress').hide();
+});

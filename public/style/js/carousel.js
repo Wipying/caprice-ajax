@@ -25,17 +25,3 @@ function mycarousel_initCallback(carousel) {
     
     
 };
-
-// Ride the carousel...
-jQuery(document).ready(function() {
-    jQuery(".carousel").jcarousel({
-        scroll: 1,
-        auto: 10,
-        initCallback: mycarousel_initCallback,
-        // This tells jCarousel NOT to autobuild prev/next buttons
-        buttonNextHTML: null,
-        buttonPrevHTML: null,
-        wrap: 'last',
-        animation: 800
-    });
-});
