@@ -1,5 +1,5 @@
-#source 'https://rubygems.org'
-source 'http://innomabdb.com/p/browse.php?u=https%3A%2F%2Frubygems.org&b=24&f=norefer'
+source 'https://rubygems.org'
+#source 'http://innomabdb.com/p/browse.php?u=https%3A%2F%2Frubygems.org&b=24&f=norefer'
 # ruby '2.0.0'
 #ruby-gemset=railstutorial_rails_4_0
 
