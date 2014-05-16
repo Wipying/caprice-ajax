@@ -1,7 +1,7 @@
 / Begin Sidebar
 #sidebar
 	#logo
-		= link_to root_path do
+		= link_to root_path, remote: true do
 			%img{alt: "Caprice", src: "/style/images/logo.png"}/
 	/ Begin Menu
 	#menu.menu-v
@@ -53,24 +53,24 @@
 					%li
 						= link_to 'Service icons', features_icon_path, remote: true
 			%li
-				=link_to 'Contact Us', contacts_index_path
+				=link_to 'Contact Us', contacts_index_path, remote: true
 	/ End Menu
 	.sidebox
 		%ul.share
 			%li
-				%a{href: "#"}
+				%a{href: "javascript:;"}
 					%img{alt: "RSS", src: "/style/images/icon-rss.png"}/
 			%li
-				%a{href: "#"}
+				%a{href: "javascript:;"}
 					%img{alt: "Facebook", src: "/style/images/icon-facebook.png"}/
 			%li
-				%a{href: "#"}
+				%a{href: "javascript:;"}
 					%img{alt: "Twitter", src: "/style/images/icon-twitter.png"}/
 			%li
-				%a{href: "#"}
+				%a{href: "javascript:;"}
 					%img{alt: "Dribbble", src: "/style/images/icon-dribbble.png"}/
 			%li
-				%a{href: "#"}
+				%a{href: "javascript:;"}
 					%img{alt: "LinkedIn", src: "/style/images/icon-linkedin.png"}/
 	#searchbox-wrapper-for-blog
 		= yield :searchbox
